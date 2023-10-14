@@ -7,7 +7,7 @@ import "../chatbot.css"
 const PageTwo =()=>
 {
     return(<>
-    <div class="flex min-h-full justify-center align items-center mt-10">
+    <div class="flex min-h-full justify-center align items-center mt-10 ">
         <Chatbot
         config={config}
         messageParser={MessageParser}
