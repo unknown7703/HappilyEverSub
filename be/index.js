@@ -9,7 +9,8 @@ const port = process.env.PORT || 8000;
 app.use(bodyParser.json());
 
 // Connect to your MongoDB Atlas cluster
-const atlasConnectionUri = 'mongodb+srv://atreya7703:h2ZhbBvk2eHNWS8j@happyeve.id6f4nd.mongodb.net/?retryWrites=true&w=majority';
+
+const atlasConnectionUri = process.env.DB_URI;
 
 mongoose.connect(atlasConnectionUri, {
   useNewUrlParser: true,
